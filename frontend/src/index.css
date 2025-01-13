@@ -129,6 +129,18 @@ section {
     color: var(--color-white);
 }
 
+.center {
+    text-align: center;
+    padding-top: 5rem;
+    margin-inline: auto;
+    display: block;
+    width: 100%;
+}
+
+.error-page h2 {
+    margin-top: 3rem;
+}
+
 img {
     display: block;
     object-fit: cover;
@@ -174,11 +186,6 @@ nav {
 }
 
 /* Footer */
-footer {
-    background: var(--color-gray-900);
-    margin-top: 6rem;
-    padding: 3rem 0 2rem 0;
-}
 
 .footer__categories {
     display: flex;
