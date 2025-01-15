@@ -8,7 +8,7 @@ const PostAuthor = () => {
       <div className="post__author-avatar">
         <img src={Avatar01} alt="author" />
       </div>
-      <div className="post__author-details">
+      <div className="post__author-details text-left">
         <h5>By: John Ribb</h5>
         <small>Just Now</small>
       </div>

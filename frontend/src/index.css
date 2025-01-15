@@ -228,7 +228,7 @@ nav {
 .posts__container {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 4rem;
+    gap: 2.5rem;
 }
 
 .post {
@@ -271,10 +271,44 @@ nav {
     align-items: center;
 }
 
+
 .post__author-avatar {
     width: 2.5rem;
     aspect-ratio: 1/1;
     border-radius: var(--radius-2);
     overflow: hidden;
+}
+
+/* PostDetail */
+
+.post-details {
+    width: var(--form-width);
+    background: var(--color-white);
+    margin-inline: auto;
+    padding: 2rem 0;
+}
+
+.post-detail__header {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+
+.post-detail__buttons {
+    display: flex;
+    gap: 0.7rem;
+    align-items: center;
+}
+
+.post-detail__thumbnail {
+    margin: 1rem 0;
+    height: fit-content;
+    max-height: 30rem;
+    overflow: hidden;
+}
+
+.post-details p {
+    text-align: left;
+    margin-bottom: 0.7rem;
 }
 
