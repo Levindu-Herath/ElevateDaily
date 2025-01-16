@@ -25,6 +25,8 @@ const Login = () => {
             name='email'
             value={userData.email}
             onChange={handleInputChange}
+            autoFocus
+            // autoFocus is used to focus on the input field as soon as the page loads
           />
 
           <input 
