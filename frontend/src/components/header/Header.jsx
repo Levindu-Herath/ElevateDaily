@@ -12,10 +12,10 @@ const Header = () => {
           <img src={Logo} alt='logo' />
         </Link>
         <ul className='nav__menu'>
-          <li><Link to="">Ernest Achiever</Link></li>
-          <li><Link to="">Create Post</Link></li>
-          <li><Link to="">Authors</Link></li>
-          <li><Link to="">Logout</Link></li>
+          <li><Link to="/profile">Ernest Achiever</Link></li>
+          <li><Link to="/create">Create Post</Link></li>
+          <li><Link to="/authors">Authors</Link></li>
+          <li><Link to="/logout">Logout</Link></li>
         </ul>
         <button className='nav__toggle-btn'>
           <AiOutlineClose />
