@@ -3,7 +3,17 @@ const cors = require('cors'); // cors is a middleware that allows the client to 
 const {connect} = require('mongoose'); // connect is a function that connects to the MongoDB database
 require('dotenv').config(); // dotenv is a package that loads environment variables from a .env file into process.env
 
+const userRoutes = require('./routes/userRoutes');
+const postRoutes = require('./routes/postRoutes');
+
 const app = express();
+
+app.use(express.json({extended: true})); // express.json() is a middleware that parses incoming requests with JSON payloads
+app.use(express.urlencoded({extended: true})); // express.urlencoded() is a middleware that parses incoming requests with urlencoded payloads
+app.use(cors({credentials: true, origin: 'http://localhost:3000'})); // cors() is a middleware that enables cross-origin resource sharing
+
+app.use('/api/users', userRoutes); 
+app.use('/api/posts', postRoutes);
 
 connect(process.env.MONGO_URI)
     .then(app.listen(5000, () => console.log(`Server is running on port ${process.env.PORT}`)))
