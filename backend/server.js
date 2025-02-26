@@ -20,5 +20,10 @@ app.use(notFound)
 app.use(errorHandler)
 
 connect(process.env.MONGO_URI)
-    .then(app.listen(5000, () => console.log(`Server is running on port ${process.env.PORT}`)))
-    .catch(err => console.error(err));
+    .then(() => {
+        console.log('Connected to MongoDB');
+        app.listen(5000, () => console.log(`Server is running on port ${process.env.PORT || 5000}`));
+    })
+    .catch(err => {
+        console.error('Failed to connect to MongoDB', err);
+    });

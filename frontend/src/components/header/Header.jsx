@@ -46,8 +46,8 @@ const Header = () => {
             </Link>
           </li>
           <li>
-            <Link to="/logout" onClick={() => setIsNavShowing(false)}>
-              Logout
+            <Link to="/login" onClick={() => setIsNavShowing(false)}>
+              Sign In
             </Link>
           </li>
         </ul>
