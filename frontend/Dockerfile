@@ -1,5 +1,5 @@
 # get the base image
-FROM node:18-alpine
+FROM node:20-alpine
 
 # set the working directory
 WORKDIR /app
@@ -8,13 +8,13 @@ WORKDIR /app
 COPY package*.json ./
 
 # install the dependencies
-RUN npm install 
+RUN npm install
 
 # copy the source code
 COPY . .
 
 # expose the port
-EXPOSE 5000
+EXPOSE 5173
 
 # start the application
 CMD ["npm", "run","dev"]
