@@ -1,10 +1,10 @@
 provider "aws" {
-  region = "us-east-1" # Change to your preferred region
+  region = "eu-north-1" # Change to your preferred region
 }
 
 resource "aws_instance" "mern_app_server" {
-  ami           = "ami-0c55b159cbfafe1f0" # Amazon Linux 2 AMI (update as needed)
-  instance_type = "t2.medium"             # Adjust based on your needs
+  ami           = "ami-0323c940050bcdb62" # Amazon Linux 2 AMI (update as needed)
+  instance_type = "t3.micro"             # Adjust based on your needs
   key_name      = "elevateDaily-key"    # Replace with your EC2 key pair name
 
   vpc_security_group_ids = [aws_security_group.mern_sg.id]
