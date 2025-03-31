@@ -28,7 +28,7 @@ const Register = () => {
     }
 
     try {
-      const response = await axios.post('http://localhost:5000/api/users/register', userData);
+      const response = await axios.post('http://13.60.43.234:5000/api/users/register', userData);
       console.log(response.data);
       // Handle successful registration (e.g., redirect to login page)
     } catch (err) {
