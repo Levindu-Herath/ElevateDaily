@@ -11,7 +11,7 @@ const app = express();
 
 app.use(express.json({extended: true})); // express.json() is a middleware that parses incoming requests with JSON payloads
 app.use(express.urlencoded({extended: true})); // express.urlencoded() is a middleware that parses incoming requests with urlencoded payloads
-app.use(cors({credentials: true, origin: 'http://l13.60.43.234:3000'})); // cors() is a middleware that enables cross-origin resource sharing
+app.use(cors({credentials: true, origin: 'http://13.60.43.234:3000'})); // cors() is a middleware that enables cross-origin resource sharing
 
 app.use('/api/users', userRoutes); 
 app.use('/api/posts', postRoutes);
