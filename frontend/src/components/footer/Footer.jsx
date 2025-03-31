@@ -5,7 +5,7 @@ const Footer = () => {
   return (
     <footer className="bg-gray-900 mt-24 py-12">
       <ul className="footer__categories">
-        <li><Link to="posts/categories/Agriculture">Agriculture</Link></li>
+        <li><Link to="posts/categories/Agriculture">Agricultureeeee</Link></li>
         <li><Link to="posts/categories/Business">Business</Link></li>
         <li><Link to="posts/categories/Education">Education</Link></li>
         <li><Link to="posts/categories/Entertainment">Entertainment</Link></li>
