@@ -1,6 +1,8 @@
-import React, { useState } from 'react';
+import React, { useState, useNavigate } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
+
+const navigate = useNavigate();
 
 const Register = () => {
   const [userData, setUserData] = useState({
@@ -30,6 +32,8 @@ const Register = () => {
     try {
       const response = await axios.post('http://13.60.43.234:5000/api/users/register', userData);
       console.log(response.data);
+      navigate('/');
+      
       // Handle successful registration (e.g., redirect to login page)
     } catch (err) {
       console.error(err);
