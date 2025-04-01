@@ -2,9 +2,10 @@ import React, { useState } from 'react';
 import { Link,useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
-const navigate = useNavigate();
 
 const Register = () => {
+  const navigate = useNavigate();
+  
   const [userData, setUserData] = useState({
     name: '',
     email: '',
